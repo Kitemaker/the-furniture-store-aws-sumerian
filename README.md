@@ -1,4 +1,4 @@
-# The-Furniture-Store
+# The Furniture Store
 Next Level Digital Signage supported by 3D models and Augmented Reality Application
 
 ## Inspiration
@@ -24,13 +24,26 @@ Just to attract the customers a widget from https://openweathermap.org/ is integ
 
 
 ## How I built it
-This Next-Level AR enabled Digital Signage is based on AWS Sumerian. To link with Amazon website and Amazon associate program , models from Amazon assets ( available with ASIN ) have been used.
+This Next-Level AR enabled Digital Signage is based on AWS Sumerian. To link with Amazon website and Amazon associate program , models from Amazon assets ( available with ASIN ) have been used. QR code of six products are used. Product naming is done such that the script will not get affected if any product model is replaced or updated.  
+To provide AR features , an ARCore based android application has been developed using Android Studio. QR Code Images are integrated in themobile app so that images are registered in app. THerefore for this project we have 2 Sumerian scenes
+  1-THe Furniture Store ( Contains Digital Signage) 
+  2-Furniture-Store-AR ( To ingetrate with ARCore mpobile application)
+
+Each QR Image is linked with Amazon Associate Widget , this widget has been created using Amazon Associate SiteStripe for the models availabe with ASIN ( Amazon Standard Identification Number) . When user scan the QR Code available on the Screen using mobile app, 
+Amazon widget becomes visible on mobile app and also 3D model appears. 
+Now using DOM Events this model can be rotated, resized or moved so that user can place the model in real world to have best experience about look and fit of the product. If user likes it user can purchase the product instantly using the Associate link provided in the mobile app. 
 
 ## Challenges I ran into
+Finding suitable models has always been a tough task , designing of signage, time synchronization to move the models on the screen was complex but was achieved using state machines. Toughest part is to implement DOM Event Handlers for single and multi touch events. Scripts has been used to rotate, scale and move the model using single touch and double touch events.
+Debugging of events in android app is also a challenge in absence of remote debugging ( was not working for me :(  ) 
 
 ## Accomplishments that I'm proud of
+First time I created AR application. I am very satisfied to launch and move 3D models in the real world. Also through this application
+I create my account of Amazon Associate Program. 
 
 ## What I learned
+Learned everything for this app starting from AWS Sumerian, ARCore, Touch Event Handlers, 
 
 ## What's next for The Furniture Store 
+Have to integrate with Facebook pages and application , also How this project can be utilised for other products e.g., books , gaming etc.   Customised offers linking to be implemented in app. Also AR Mobile app to be enriched to have more product categories.
 
